@@ -5,13 +5,13 @@ import { onMounted } from "vue";
 
 export function useNotification() {
     const firebaseConfig = {
-        apiKey: "AIzaSyCrzyvOM0aBFCuXr3VeK-ZpUnB_xzXbFg8",
-        authDomain: "ikon-mart.firebaseapp.com",
-        projectId: "ikon-mart",
-        storageBucket: "ikon-mart.appspot.com",
-        messagingSenderId: "847383826079",
-        appId: "1:847383826079:web:e78d8f9995b942aba39caa",
-        measurementId: "G-RD1C38LVL0",
+        apiKey: "You_apikey",
+        authDomain: "You_projectDoamin",
+        projectId: "YouId",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: "",
     };
 
     const app = initializeApp(firebaseConfig);
