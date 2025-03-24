@@ -1,0 +1,53 @@
+body {
+    font-family: "Inter", "Noto Sans Myanmar";
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.p-dialog .p-dialog-footer {
+    justify-content: flex-end !important;
+}
+
+.overlay {
+    position: relative;
+}
+
+.p-checkbox-box {
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.data-table tr th {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.data-table .p-datatable-wrapper {
+    overflow: unset !important;
+}
+
+.data-table tr td {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.p-datepicker {
+    min-width: unset !important;
+}
+
+/* 1024 -1 so it doesnt show when it hits 1024px */
+@media only screen and (max-width: 1023px) {
+    .overlay:after {
+        content: " ";
+        z-index: 29;
+        display: block;
+        height: 100%;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        position: fixed;
+    }
+}
